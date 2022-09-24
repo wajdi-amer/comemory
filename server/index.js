@@ -1,3 +1,5 @@
+import * as dotenv from 'dotenv';
+dotenv.config()
 import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
@@ -9,3 +11,9 @@ app.use(bodyParser.json({ limit: "30mb", extended: true }));
 app.use(bodyParser.urlencoded({ limit: "30mb", extended: true }));
 app.use(cors());
 
+const CONNECTION_URL = process.env.CONNECTION_URL;
+const PORT = process.env.PORT || 5000;
+
+mongoose.connect(CONNECTION_URL)
+    .then(() => app.listen(PORT, () => console.log(`Server Running on Port: ${PORT}`)))
+    .catch((error) => console.log(error.message));
