@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import jwt_decode from 'jwt-decode';
 import { useDispatch } from 'react-redux';
-import { GoogleLogin, googleLogout } from '@react-oauth/google';
+import { GoogleLogin } from '@react-oauth/google';
 import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
-import Icon from './icon';
-import { signin, signup } from '../../actions/auth';
+import { signIn, signUp } from '../../actions/auth';
 import useStyles from './styles';
 import Input from './Input';
 import { useHistory } from 'react-router-dom';
@@ -29,9 +28,9 @@ const Auth = () => {
     e.preventDefault();
 
     if (isSignup) {
-      dispatch(signup(formData, history));
+      dispatch(signUp(formData, history));
     } else {
-      dispatch(signin(formData, history));
+      dispatch(signIn(formData, history));
     }
   }
 
@@ -41,7 +40,7 @@ const Auth = () => {
 
   const switchMode = () => {
     setIsSignup((prevIsSignup) => !prevIsSignup);
-    handleShowPassword(false);
+    setShowPassword(false);
   }
 
   const googleSuccess = (res) => {
