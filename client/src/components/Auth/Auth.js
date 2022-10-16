@@ -6,7 +6,7 @@ import { Avatar, Button, Paper, Grid, Typography, Container } from '@material-ui
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 
 import Icon from './icon';
-// import { signin, signup } from '../../actions/auth';
+import { signin, signup } from '../../actions/auth';
 import useStyles from './styles';
 import Input from './Input';
 import { useHistory } from 'react-router-dom';
@@ -29,7 +29,9 @@ const Auth = () => {
     e.preventDefault();
 
     if (isSignup) {
-      // dispatch(signup(formData, history))
+      dispatch(signup(formData, history));
+    } else {
+      dispatch(signin(formData, history));
     }
   }
 
