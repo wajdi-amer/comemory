@@ -26,14 +26,10 @@ const Homepage = () => {
     const page = query.get('page') || 1;
     const searchQuery = query.get('searchQuery');
 
-
-    useEffect(() => {
-        dispatch(getPosts());
-    }, [currentId, dispatch]);
-
     const searchPost = () => {
-        if(search.trim()) {
+        if(search.trim() || tagsSearch) {
             dispatch(getPostsBySearch({ search, tagsSearch: tagsSearch.join(',') }));
+            history.push(`/posts/search?searchQuery=${search || 'none'}&tags=${tagsSearch.join(',')}`)
         } else {
             history.push('/');
         }
@@ -57,7 +53,7 @@ const Homepage = () => {
                     </Grid>
                     <Grid item xs={12} sm={6} md={3}>
                         <AppBar className={classes.appBarSearch} position='static' color='inherit'>
-                            <TextField name='search' variant='outlined' label='Search Memories...' onKeyPress={handleKeyPress}
+                            <TextField name='search' variant='outlined' label='Search Memories...' onKeyUp={handleKeyPress}
                                 fullWidth value={search} onChange={(e) => setSearch(e.target.value)} />
                             <ChipInput
                                 style={{ margin: '10px 0' }}
@@ -72,8 +68,8 @@ const Homepage = () => {
                             </Button>
                         </AppBar>
                         <Form currentId={currentId} setCurrentId={setCurrentId} />
-                        <Paper elevation={6}>
-                            <Paginate />
+                        <Paper elevation={6} className={classes.pagination}>
+                            <Paginate page={page} />
                         </Paper>
                     </Grid>
                 </Grid>
