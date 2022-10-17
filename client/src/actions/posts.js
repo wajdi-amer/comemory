@@ -34,7 +34,7 @@ export const createPost = (post) => async (dispatch) => {
         dispatch({ type: CREATE, payload: data});
         dispatch({ type: END_LOADING });
     } catch (error) {
-        console.log(error.message);
+        console.log(error);
     }
 }
 
