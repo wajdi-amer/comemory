@@ -5,6 +5,7 @@ import decode from 'jwt-decode';
 import { AppBar, Avatar, Toolbar, Typography, Button } from '@material-ui/core';
 import { Link } from 'react-router-dom';
 import comemoryIcon from '../../images/comemory_icon.png';
+import comemoryText from '../../images/comemory_text.png';
 
 import useStyles from './styles';
 
@@ -38,10 +39,10 @@ const Navbar = () => {
 
     return (
         <AppBar className={classes.appBar} position='static' color='inherit'>
-            <div className={classes.brandContainer}>
-                <Typography component={Link} to='/' className={classes.heading} variant='h2' align='center'>CoMemory</Typography>
+            <a href='/' className={classes.brandContainer}>
                 <img className={classes.image} src={comemoryIcon} alt='comemory icon' height='60' />
-            </div>
+                <img className={classes.image} src={comemoryText} alt='comemory heading' height='85' />
+            </a>
             <Toolbar className={classes.toolbar}>
                 {user ? (
                     <div className={classes.profile}>

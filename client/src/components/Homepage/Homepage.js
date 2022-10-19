@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useHistory, useLocation } from 'react-router-dom';
 import ChipInput from 'material-ui-chip-input';
@@ -6,7 +6,7 @@ import { Container, Grow, Grid, Paper, AppBar, TextField, Button } from '@materi
 
 import useStyles from './styles';
 
-import { getPosts, getPostsBySearch } from '../../actions/posts';
+import { getPostsBySearch } from '../../actions/posts';
 import Paginate from '../Pagination/Paginate';
 import Form from '../Form/Form';
 import Posts from '../Posts/Posts';
@@ -24,7 +24,6 @@ const Homepage = () => {
     const query = useQuery();
     const history = useHistory();
     const page = query.get('page') || 1;
-    const searchQuery = query.get('searchQuery');
 
     const searchPost = () => {
         if(search.trim() || tagsSearch) {
