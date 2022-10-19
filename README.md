@@ -11,10 +11,11 @@
 <br />
 <div align="center">
   <a href="https://github.com/wajdi-amer/comemory">
-    <img src="./client/src/images/comemory_icon.png" alt="Logo" width="110">
+    <img src="./client/src/images/comemory_icon.png" alt="Logo" width="60">
   </a>
-
-<h3 align="center">CoMemory</h3>
+  <a href="https://github.com/wajdi-amer/comemory">
+    <img src="./client/src/images/comemory_text.png" alt="Logo" width="220">
+  </a>
 
   <p align="center">
     Collect Your Memories!
@@ -131,13 +132,17 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] feature
-    - [x] nested feature
-    - [x] nested feature
-- [x] feature 
-- [x] features 
-- [ ] feature
-    - [ ] Nested Feature
+- [x] Memories Posts
+    - [x] Creating/Editing/Deleting a Memory
+    - [x] Liking Memories
+- [x] Memories Details (Clicking on a Memory for more details)
+- [x] Pagination Support 
+- [x] Searching for Memories by:
+    - [x] Title
+    - [x] Tags
+- [x] User Login/Register
+    - [x] Encrypted and safe passwords
+- [ ] Comments
 
 See the [open issues](https://github.com/wajdi-amer/comemory/issues) for a full list of proposed features (and known issues).
 
@@ -210,7 +215,7 @@ Project Link: [https://github.com/wajdi-amer/comemory](https://github.com/wajdi-
 [license-url]: https://github.com/wajdi-amer/comemory/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wajdi-am
-[product-screenshot]: images/screenshot.png
+[product-screenshot]: ./client/src/images/website_screenshot.png
 [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
 [React-url]: https://reactjs.org/
 [MUI-badge]: https://img.shields.io/badge/-MUI-007fff?logo=mui&logoColor=white&style=for-the-badge
