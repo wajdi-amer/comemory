@@ -212,7 +212,7 @@ Project Link: [https://github.com/wajdi-amer/comemory](https://github.com/wajdi-
 [issues-shield]: https://img.shields.io/github/issues/wajdi-amer/comemory.svg?style=for-the-badge
 [issues-url]: https://github.com/wajdi-amer/comemory/issues
 [license-shield]: https://img.shields.io/github/license/wajdi-amer/comemory.svg?style=for-the-badge
-[license-url]: https://github.com/wajdi-amer/comemory/blob/master/LICENSE.txt
+[license-url]: https://github.com/wajdi-amer/comemory/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/wajdi-am
 [product-screenshot]: ./client/src/images/website_screenshot.png
