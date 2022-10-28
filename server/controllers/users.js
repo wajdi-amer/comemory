@@ -46,3 +46,13 @@ export const signUp = async (req, res) => {
         res.status(500).json({ message: error });
     }
 }
+
+export const fetchKey = async (req,res) => {
+    try {
+        const data = process.env.GOOGLE_ID;
+
+        res.status(200).json({ data });
+    } catch (error) {
+        console.log(error);
+    }
+}
