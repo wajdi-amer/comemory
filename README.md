@@ -101,19 +101,24 @@ To get a local copy up and running follow these simple example steps.
   ```
 
 * docker
+https://www.docker.com/
 
 ### Installation
 
 1. Clone the repo
+
    ```sh
    git clone https://github.com/wajdi-amer/comemory.git
    ```
+
 2. Rename '.env.example' in the server folder to simply '.env' 
 3. Fill the environment variables with your own
 4. Run Docker-Compose
+
    ```
      docker-compose up
    ```
+
 5. Open 'localhost:3000' in your browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
