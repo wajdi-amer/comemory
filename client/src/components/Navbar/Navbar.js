@@ -18,9 +18,10 @@ const Navbar = () => {
 
     const logout = () => {
         dispatch({ type: 'LOGOUT' });
-
+        
         setUser(null);
         history.push('/');
+        history.go(0);
     }
     
     useEffect(() => {
