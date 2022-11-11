@@ -133,17 +133,27 @@ To get a local copy up and running follow these simple example steps.
 <!-- ROADMAP -->
 ## Roadmap
 
-- [x] Memories Posts
-    - [x] Creating/Editing/Deleting a Memory
-    - [x] Liking Memories
-- [x] Memories Details (Clicking on a Memory for more details)
+- [x] Authentication System
+    - [x] Sign up - (bcrypt)
+    - [x] Local login - (jwt)
+    - [x] Google login - (React OAuth2 | Google)
+- [x]  Authorization system
+    - [x] Role-based access control (editing/deleting own posts, liking others'...)
+- [x]  User management - CRUD operations
+    - [x] Creating Posts
+    - [x] Deleting Posts
+    - [x] Editing Posts
+    - [x] Liking Posts
+    - [x] ..and more
+- [x] Search System, via:
+  - [x] Title
+  - [x] Tags
 - [x] Pagination Support 
-- [x] Searching for Memories by:
-    - [x] Title
-    - [x] Tags
-- [x] User Login/Register
-    - [x] Encrypted and safe passwords
-- [ ] Comments
+- [x] Routing
+  - [x] Homepage, 404, Auth, Details, and more routes
+- [] Comments System
+- [x] Docker Support
+- [x] Deployment
 
 See the [open issues](https://github.com/wajdi-amer/comemory/issues) for a full list of proposed features (and known issues).
 
