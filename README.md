@@ -100,8 +100,7 @@ To get a local copy up and running follow these simple example steps.
   npm install npm@latest -g
   ```
 
-* docker
-https://www.docker.com/
+* <a href='https://www.docker.com/'>Docker</a>
 
 ### Installation
 
