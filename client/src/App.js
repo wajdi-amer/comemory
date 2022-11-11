@@ -8,6 +8,7 @@ import PostDetails from './components/PostDetails/PostDetails';
 import Navbar from './components/Navbar/Navbar';
 import Homepage from './components/Homepage/Homepage';
 import Auth from './components/Auth/Auth';
+import PageNotFound from './components/PageNotFound/PageNotFound';
 
 const App = () => {
     const user = JSON.parse(localStorage.getItem('profile'));
@@ -25,8 +26,8 @@ const App = () => {
                         <Route path='/posts' exact component={Homepage} />
                         <Route path='/posts/search' exact component={Homepage} />
                         <Route path='/posts/:id' component={PostDetails} />
-                        <Route path='/auth' exact component={() => (!user ? <Auth /> : <Redirect to='/posts' />)} />
-                        {/* <Route path='*' /> */}
+                        <Route path='/auth' exact component={() => (user ? <Redirect to='/posts' /> : <Auth /> )} />
+                        <Route path='*' component={PageNotFound} />
                     </Switch>
                 </Container>
             </GoogleOAuthProvider>
