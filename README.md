@@ -100,32 +100,21 @@ To get a local copy up and running follow these simple example steps.
   npm install npm@latest -g
   ```
 
+* docker
+
 ### Installation
 
-1. Get a MongoDB connection URL from https://www.mongodb.com/atlas/database
-
-2. Clone the repo
+1. Clone the repo
    ```sh
    git clone https://github.com/wajdi-amer/comemory.git
    ```
-3. Install NPM packages
-   ```sh
-   npm install
+2. Rename '.env.example' in the server folder to simply '.env' 
+3. Fill the environment variables with your own
+4. Run Docker-Compose
    ```
-4. Enter your MongoDB URL in `/server/env.example` and rename the file to `.env`
-   ```js
-      CONNECTION_URL= 
+     docker-compose up
    ```
-5. Naviage to the server folder in your terminal, and run NPM start
-    ```
-      cd ./server/
-      npm start
-    ```
-6. Naviage to the client folder in your terminal, and run NPM start
-    ```
-      cd ./client/
-      npm start
-    ```
+5. Open 'localhost:3000' in your browser
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,7 +140,7 @@ To get a local copy up and running follow these simple example steps.
 - [x] Pagination Support 
 - [x] Routing
   - [x] Homepage, 404, Auth, Details, and more routes
-- [] Comments System
+- [ ] Comments System
 - [x] Docker Support
 - [x] Deployment
 
