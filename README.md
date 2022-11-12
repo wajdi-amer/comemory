@@ -10,10 +10,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/wajdi-amer/comemory">
+  <a href="https://comemory.netlify.app/">
     <img src="./client/src/images/comemory_icon.png" alt="Logo" width="60">
-  </a>
-  <a href="https://github.com/wajdi-amer/comemory">
     <img src="./client/src/images/comemory_text.png" alt="Text" width="220">
   </a>
 
@@ -62,7 +60,9 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-<img src="./client/src/images/website_screenshot.png" alt="screenshot">
+<a href='https://comemory.netlify.app/'>
+  <img src="./client/src/images/website_screenshot.png" alt="screenshot">
+</a>
 
 This website was developed to be some-kind of a social media app where you can share your Memories, like others and interact with your friends.
 The project was developed using the MERN stack, and in the process I also learned and implemented Redux, JWT, Google OAuth and more...   
